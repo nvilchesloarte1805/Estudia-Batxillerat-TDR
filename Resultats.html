@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultats de la cerca</title>
+    <link rel="stylesheet" href="Resultats.css">
+    <script src="https://kit.fontawesome.com/b3e2c34a6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Estudia Batxillerat</div>
+
+    <input type="checkbox" id="toggle" aria-label="Obrir o tancar menú">
+    <label for="toggle">
+        <img src="Imatges/menu.svg" alt="Obrir menú">
+    </label>
+    <nav class="navigation" aria-label="Menú principal">
+        <ul>
+            <li><a href="Inici.html">Inici</a></li>
+            <li>
+                <a href="#">Tècniques i Recursos d'estudi</a>
+                <ul>
+                    <li><a href="Resums.html">Resums</a></li>
+                    <li><a href="Fitxes d'estudi.html">Fitxes Estudi</a></li>
+                    <li><a href="Exàmens Selectivitat.html">Exàmens Selectivitat <span>16</span></a></li>
+                    <li><a href="Tècniques Memorístiques.html">Tècniques Memorístiques</a></li>
+                    <li><a href="Vídeos Educatius.html">Vídeos Educatius <span>16</span></a></li>
+                    <li><a href="#">Sintetitzadors Informació</a>
+                        <ul>
+                            <li><a href="Esquemes.html">Esquemes <span>4</span></a></li>
+                            <li><a href="Mapes Conceptuals.html">Mapes Conceptuals <span>4</span></a></li>
+                            <li><a href="Mapes Mentals.html">Mapes Mentals <span>4</span></a></li>
+                            <li><a href="Infografies.html">Infografies <span>3</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tècniques de relaxació</a>
+                <ul>
+                    <li><a href="Respiració.html">Respiració</a></li>
+                    <li><a href="Muscular Jacobson.html">Muscular progressiva de Jacobson</a></li>
+                    <li><a href="Meditació.html">Meditació</a></li>
+                    <li><a href="Ioga.html">Ioga <span>6</span></a></li>
+                    <li><a href="Activitats relaxants.html">Activitats Relaxants <span>16</span></a></li>
+                    <li><a href="Relaxació Benson.html">Relaxació de Benson</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Hàbits d'estudi</a>
+                <ul>
+                    <li><a href="Objectiu clar.html">Objectiu clar</a></li>
+                    <li><a href="Atenció classe.html">Atenció a classe</a></li>
+                    <li><a href="Establir horari.html">Establir un horari</a></li>
+                    <li><a href="Descans.html">Descans</a></li>
+                    <li><a href="Preguntar dubtes.html">Preguntar Dubtes</a></li>
+                    <li><a href="Dieta eq i act fis.html">Dieta Equilibrada i Activitat Física</a></li>
+                </ul>
+            </li>
+            <li><a href="Preguntes Freqüents.html">Preguntes Freqüents</a></li>
+            <li><a href="Contacte.html">Contacte</a></li>              
+        </ul>
+    </nav>
+    <form class="form" action="Resultats.html" method="get" onsubmit="guardarBusqueda(event)">
+        <input type="text" id="searchInput" name="q" list="opcions" placeholder="Buscar..." required>
+        <datalist id="opcions">
+            <option value="Inici">
+            <option value="Resums">
+            <option value="Fitxes d'estudi">
+            <option value="Exàmens Selectivitat">
+            <option value="Tècniques Memorístiques">
+            <option value="Vídeos Educatius">
+            <option value="Contacte">
+            <option value="Preguntes Freqüents">
+            <option value="Esquemes">
+            <option value="Infografies">
+            <option value="Mapes Mentals">
+            <option value="Mapes Conceptuals">
+            <option value="Atenció a classe">
+            <option value="Descans">
+            <option value="Dieta Equilibrada i Activitat Física">
+            <option value="Establir un horari">
+            <option value="Ioga">
+            <option value="Meditació">
+            <option value="Muscular Progressiva de Jacobson">
+            <option value="Infografies">
+            <option value="Objectiu clar">
+            <option value="Relaxació de Benson">
+            <option value="Activitats Relaxants">
+        </datalist>
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+</header>
+<main>
+  <header class="header">
+  </header>
+  <div id="searchResults">
+  </div>
+  <section class="hero">
+  </section>
+</main>
+<div class="separador"></div>
+<footer>
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="nav-section">
+        <nav>
+            <a href="Inici.html">Inici</a>
+            <a href="Resums.html">Resums</a>
+            <a href="Fitxes d'estudi.html">Fitxes Estudi</a>
+            <a href="Exàmens Selectivitat.html">Exàmens Selectivitat</a>
+            <a href="Tècniques Memorístiques.html">Tècniques Memorístiques</a>
+            <a href="Vídeos Educatius.html">Vídeos Educatius</a>
+            <a href="Contacte.html">Contacte</a>
+        </nav>
+    </div>
+    <div class="copy">
+        Copyright 2025 - <i class="fa-solid fa-registered"></i>
+    </div>
+</footer>
+
+<script>
+const pages = [
+    { title: "Inici", url: "Inici.html", keywords: "" },
+    { title: "Resums", url: "Resums.html", keywords: "" },
+    { title: "Fitxes d'estudi", url: "Fitxes d'estudi.html", keywords: "" },
+    { title: "Exàmens Selectivitat", url: "Exàmens Selectivitat.html", keywords: "" },
+    { title: "Tècniques Memorístiques", url: "Tècniques Memorístiques.html", keywords: "" },
+    { title: "Vídeos Educatius", url: "Vídeos Educatius.html", keywords: "" },
+    { title: "Contacte", url: "Contacte.html", keywords: "" },
+    { title: "Activitats Relaxants", url: "Activitats relaxants.html", keywords: " "},
+    { title: "Preguntes Freqüents", url: "Preguntes Freqüents.html", keywords:""},
+    { title: "Dieta Equilibrada i Activitat Física", url: "Dieta eq i act fis.html", keywords:""},
+    { title: "Esquemes", url: "Esquemes.html", keywords:""},
+    { title: "Infografies", url: "Infografies.html", keywords:""},
+    { title: "Mapes Mentals", url: "Mapes Mentals.html", keywords:""},
+    { title: "Mapes Conceptuals", url: "Mapes Conceptuals.html", keywords:""},
+    { title: "Atenció a classe", url: "Atenció classe.html", keywords: " "},
+    { title: "Descans", url: "Descans.html", keywords: "" },
+    { title: "Establir un horari", url: "Establir horari.html", keywords: "" },
+    { title: "Ioga", url: "Ioga.html", keywords: "" },
+    { title: "Muscular Progressiva de Jacobson", url: "Muscular Jacobson.html", keywords: ""},
+    { title: "Objectiu clar", url: "Objectiu clar.html", keywords: "" },
+    { title: "Relaxació de Benson", url: "Relaxació Benson.html", keywords: ""},
+    { title: "Meditació", url: "Meditació.html", keywords: ""},
+];
+
+function guardarBusqueda(event) {
+    event.preventDefault();
+    let query = document.getElementById("searchInput").value;
+    localStorage.setItem("searchQuery", query);
+    window.location.href = "Resultats.html";
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+    const query = (localStorage.getItem("searchQuery") || "").toLowerCase();
+    const container = document.getElementById("searchResults");
+    container.innerHTML = "";
+
+    if (query.length > 0) {
+        const results = pages.filter(page =>
+            page.title.toLowerCase().includes(query) ||
+            page.keywords.toLowerCase().includes(query)
+        );
+
+        if (results.length > 0) {
+            const ul = document.createElement("ul");
+            results.forEach(page => {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <a href="${page.url}" class="result-item">${page.title}</a>
+                    <div class="tags">
+                        ${page.keywords.split(" ").map(k => `<span class="tag">${k}</span>`).join(" ")}
+                    </div>
+                `;
+                ul.appendChild(li);
+            });
+            container.appendChild(ul);
+        } else {
+            container.innerHTML = "<p>No s'han trobat resultats.</p>";
+        }
+    }
+});
+</script>
+
+</body>
+</html>

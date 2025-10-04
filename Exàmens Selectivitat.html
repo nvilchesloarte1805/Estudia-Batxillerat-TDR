@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici</title>
+    <link rel="stylesheet" href="Exàmens Selectivitat.css">
+    <script src="https://kit.fontawesome.com/b3e2c34a6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Estudia Batxillerat</div>
+        <input type="checkbox" id="toggle" aria-label="Abrir o cerrar menú">
+        <label for="toggle">
+            <img src="Imatges/menu.svg" alt="Icono de menú desplegable">
+        </label>
+
+        <nav class="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="Inici.html">Inici</a></li>
+                <li>
+                    <a href="#">Tècniques i Recursos d'estudi</a>
+                    <ul>
+                        <li><a href="Resums.html">Resums</a></li>
+                        <li><a href="Fitxes d'estudi.html">Fitxes Estudi</a></li>
+                        <li><a href="Exàmens Selectivitat.html">Exàmens Selectivitat <span>16</span></a></li>
+                        <li><a href="Tècniques Memorístiques.html">Tècniques Memorístiques</a></li>
+                        <li><a href="Vídeos Educatius.html">Vídeos Educatius <span>16</span></a></li>
+                        <li><a href="#">Sintetitzadors Informació</a>
+                            <ul>
+                                <li><a href="Esquemes.html">Esquemes <span>4</span></a></li>
+                                <li><a href="Mapes Conceptuals.html">Mapes Conceptuals <span>4</span></a></li>
+                                <li><a href="Mapes Mentals.html">Mapes Mentals <span>4</span></a></li>
+                                <li><a href="Infografies.html">Infografies <span>3</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tècniques de relaxació</a>
+                    <ul>
+                        <li><a href="Respiració.html">Respiració</a></li>
+                        <li><a href="Muscular Jacobson.html">Muscular progressiva de Jacobson</a></li>
+                        <li><a href="Meditació.html">Meditació</a></li>
+                        <li><a href="Ioga.html">Ioga <span>6</span></a></li>
+                        <li><a href="Activitats relaxants.html">Activitats Relaxants <span>16</span></a></li>
+                        <li><a href="Relaxació Benson.html">Relaxació de Benson</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hàbits d'estudi</a>
+                    <ul>
+                        <li><a href="Objectiu clar.html">Objectiu clar</a></li>
+                        <li><a href="Atenció classe.html">Atenció a classe</a></li>
+                        <li><a href="Establir horari.html">Establir un horari</a></li>
+                        <li><a href="Descans.html">Descans</a></li>
+                        <li><a href="Preguntar dubtes.html">Preguntar Dubtes</a></li>
+                        <li><a href="Dieta eq i act fis.html">Dieta Equilibrada i Activitat Física</a></li>
+                    </ul>
+                </li>
+                <li><a href="Preguntes Freqüents.html">Preguntes Freqüents</a></li>
+                <li><a href="Contacte.html">Contacte</a></li>              
+            </ul>
+        </nav>
+        <form class="form" action="Resultats.html" method="get" aria-label="Buscar en el sitio">
+            <input type="text" name="search" placeholder="Buscar..." aria-label="Buscar en el lloc">
+            <datalist list="input">
+                <option value="Inici">
+                <option value="Resums">
+                <option value="Fitxes Estudi">
+                <option value="Exercicis">
+                <option value="Tècniques Memorístiques">
+                <option value="Vídeos Educatius">
+                <option value="Contacte">
+            </datalist>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form> 
+    </header>
+
+    <div class="hero"></div>
+    <h1 class="fons-text">Exàmens Selectivitat</h1>
+    <div class="contingut">
+      Aquí trobaràs diferents exercicis útils per practicar els exàmens de la selectivitat de cara assolir uns bons resultats acadèmics.
+    </div>
+    <div class="separador"></div>
+    <section class="exercicis">
+        <h2>Exàmens de Selectivitat</h2>
+            <div class="grid">
+          
+              <div class="card">
+                <img src="Imatges/MatesEx.jpg" alt="MatesEx">
+                <h3>Matemàtiques</h3>
+                <p>Aquí trobaràs exercicis de continguts matemàtics i lògics.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Matem%C3%A0tiques" class="card-btn">Veure el contingut</a>
+              </div>
+          
+              <div class="card">
+                <img src="Imatges/CatalàEx.jpg" alt="CatalàEx">
+                <h3>Llengua Catalana i Literatura</h3>
+                <p>Aquí trobaràs exercicis de continguts lingüístics i literaris en català.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Llengua%20catalana" class="card-btn">Veure el contingut</a>
+              </div>
+          
+              <div class="card">
+                <img src="Imatges/CastellàEx.jpg" alt="CastellàEx">
+                <h3>Llengua Castellana i Literatura</h3>
+                <p>Aquí trobaràs exercicis de continguts lingüístics i literaris en castellà.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Llengua%20castellana" class="card-btn">Veure el contingut</a>
+              </div>
+
+              <div class="card">
+                <img src="Imatges/AnglèsEx.jpg" alt="AnglèsEx">
+                <h3>Llengua estrangera (Anglès)</h3>
+                <p>Aquí trobaràs exercicis de continguts relacionats en anglès.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Angl%C3%A8s" class="card-btn">Veure el contingut</a>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="card">
+                <img src="Imatges/BiologiaEx.jpg" alt="BiologiaEx">
+                <h3>Biologia</h3>
+                <p>Aquí trobaràs exercicis de continguts relacionats amb la biologia.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Biologia" class="card-btn">Veure el contingut</a>
+              </div>
+          
+              <div class="card">
+                <img src="Imatges/FísicaEx.jpg" alt="FísicaEx">
+                <h3>Física</h3>
+                <p>Aquí trobaràs exercicis de continguts relacionats amb la física.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/F%C3%ADsica" class="card-btn">Veure el contingut</a>
+              </div>
+          
+              <div class="card">
+                <img src="Imatges/QuímicaEx.jpg" alt="QuímicaEx">
+                <h3>Química</h3>
+                <p>Aquí trobaràs exercicis de continguts relacionats amb la química.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Qu%C3%ADmica" class="card-btn">Veure el contingut</a>
+              </div>
+
+              <div class="card">
+                <img src="Imatges/HistòriaEx.jpg" alt="HistòriaEx">
+                <h3>Història</h3>
+                <p>Aquí trobaràs exercicis de continguts d'història.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Hist%C3%B2ria" class="card-btn">Veure el contingut</a>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="card">
+                <img src="Imatges/FilosofiaEx.jpg" alt="FilosofiaEx">
+                <h3>Història de la filosofia</h3>
+                <p>Aquí trobaràs exercicis de continguts filosòfics.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Hist%C3%B2ria%20de%20la%20filosofia" class="card-btn">Veure el contingut</a>
+              </div>
+
+              <div class="card">
+                <img src="Imatges/Dibuix TècnicEx.jpg" alt="Dibuix TècnicEx">
+                <h3>Dibuix Tècnic</h3>
+                <p>Aquí trobaràs exercicis de continguts de dibuix tècnic.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Dibuix%20t%C3%A8cnic" class="card-btn">Veure el contingut</a>
+              </div>
+
+              <div class="card">
+                <img src="Imatges/Tecnologia i EnginyeriaEx.jpg" alt="Tecnologia i EnginyeriaEx">
+                <h3>Tecnologia i Enginyeria</h3>
+                <p>Aquí trobaràs exercicis de continguts tecnològics i d'enginyeria.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Tecnologia%20industrial" class="card-btn">Veure el contingut</a>
+              </div>
+              <div class="card">
+                <img src="Imatges/Funcionament de l'EmpresaEx.jpg" alt="Funcionament de l'EmpresaEx">
+                <h3>Funcionament Empresa</h3>
+                <p>Aquí trobaràs exercicis de continguts relacionats amb l'empresa.</p>
+                <a href="https://examenselectivitat.cat/selectivitat/Economia%20de%20l'empresa" class="card-btn">Veure el contingut</a>
+              </div>
+            </div>
+    </section>
+    <div class="separador"></div> 
+    <footer>
+        <div class="social">
+            <a href="home.html"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="nav-section">
+            <nav>
+                <a href="Inici.html">Inici</a>
+                <a href="Inici.html">Tècniques i Recuros d'estudi</a>
+                <a href="Inici.html">Tècniques de relaxació</a>
+                <a href="Inici.html">Hàbits d'estudi</a>
+                <a href="Preguntes Freqüents.html">Preguntes Freqüents</a>
+                <a href="Contacte.html">Contacte</a>
+            </nav>
+        </div>
+        <div class="copy">
+            Copyright 2025 -<i class="fa-solid fa-registered"></i>
+        </div>
+    </footer>
+</body>
+</html>
